@@ -34,8 +34,8 @@
                     <select name="Interest" id="interest">
                         <option value="">Your Interest</option>
                         <option value="Arduino">Arduino/IOT</option>
-                        <option value="Electronics/Circuitary">Electronics/Circuitary</option>
-                        <option value="Android dev">Android Development</option>
+                        <option value="Circuitary">Electronics/Circuitary</option>
+                        <option value="IOT">Android Development</option>
 
                     </select>
                     <br>
@@ -46,7 +46,7 @@
                         placeholder="Enter the brief description about your projects"></textarea>
                     <br>
                     
-                    <input class="btn" type="submit" name="submit" value="Submit" />
+                    <input class="btn" type="submit" name="submit" value="Save" />
                     <br>
                     <p class="p2" id="myDIV"><b>*Note: Please Wait while your datails are being saved !!</b></p>
                     <br>
@@ -57,12 +57,10 @@
                 <h4 class="detail" id="myDIV"><b>*Date of Interview: 28 August 2021</b></h4>
                 <h4  id="myDIV"><b>*Timing: 12pm to 6pm</b></h4>
                 <h4  id="myDIV"><b>*Location: B-401 Street no. 20, Bhajanpura, Delhi-110053</b></h4>
-                <h4  id="myDIV" class="detail"><b>*For more Info: Contact- 9315137687, 9205039505, 9205093074</b></h4>
+                <h4  id="myDIV" class="detail"><b>*For more Info: Coontact- 9315137687, 9205039505, 9205093074</b></h4>
 
 
         </div>
-          <br>
-            <br>
     </center>
 
     <script type="text/javascript">
@@ -71,6 +69,8 @@
         var num = document.getElementById('phone');
         var mail = document.getElementById('email');
         var usp = document.getElementById('interest');
+        var skill = document.getElementById('skills');
+        var project = document.getElementById('projects');
 
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwnjxGQjIswMrYtB_7B7s4crWMBkvDXaHU_u5dw4SA5awQs_upBCLM7vBBthTLcZ7Q/exec'
         const form = document.forms['google-sheet']
@@ -78,18 +78,18 @@
 
         form.addEventListener('submit', e => {
             e.preventDefault()
-
-            if (naam.value === "" || num.value === "" || mail.value === "" || usp.value === "") {
+            
+            if (naam.value === "" || num.value === "" || mail.value === "" || usp.value === "" || skill.value === "" || project.value === "") {
                 alert("Please fill all the required details");
             }
             else {
                
-                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                 alert("Saving your details. Please Wait !");
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                     .then(response => alert("You have successfully submitted. We will Contact you soon !"))
                     .catch(error => console.error('Error!', error.message))
             }
-
+           
         }
         )
 
