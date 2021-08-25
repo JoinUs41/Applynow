@@ -1,0 +1,133 @@
+*{
+    margin: 0%;
+padding: 0%;
+font-family: 'Pangolin', cursive;
+}
+
+body{
+    background-image: linear-gradient(120deg, #21d5db, #2393f0, #21d5db);
+    background-repeat: no repeat;
+transition: .5s;
+background-size: 200%;
+}
+
+
+
+#formpage{
+  
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+    margin-top: 11px;
+    padding: 33px;
+    width: 65%;
+    height: 60%;
+}
+
+.regiinput{
+    font-size: 16px;
+    outline: none;
+    background: transparent;
+    margin: 10px;
+    margin-top: 20px;
+    
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 215px;
+}
+
+.projects{
+    font-size: 16px;
+    outline: none;
+    background: transparent;
+    margin: 10px;
+    margin-top: 20px;
+    
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 219px;
+}
+
+#pcb{
+    margin-left: -1px;
+    margin-right: 0px;
+    width: 176px;
+}
+
+
+#interest{
+    font-size: 16px;
+    outline: none;
+    background: transparent;
+    margin: 10px;
+    margin-top: 20px;
+    
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 229px;
+}
+
+#skills{
+    font-size: 16px;
+    outline: none;
+    background: transparent;
+    margin: 10px;
+    margin-top: 20px;
+    
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 219px;
+}
+
+
+
+.btn{
+    font-size: 15px;
+margin: 8px;
+padding: 6px;
+width: 64%;
+background:  linear-gradient(120deg, #21d5db, #2393f0, #21d5db);
+transition: .5s;
+outline: none;
+border: none;
+border-radius: 10px;
+color: white;
+cursor: pointer;
+
+}
+
+
+
+.info{
+    width: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.buynow1{
+    margin-top: 25px;
+    font-size: 30px;
+    color: white;
+}
+
+.p2{
+    font-size: 10px;
+    color: red;
+    
+}
+
+.detail{
+ margin-top: 30px;
+}
+
+select option{
+    background-color: #d9dbdb;
+}
