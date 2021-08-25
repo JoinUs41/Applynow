@@ -85,6 +85,7 @@
             else {
                
                 fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                alert("Saving your details. Please Wait !");
                     .then(response => alert("You have successfully submitted. We will Contact you soon !"))
                     .catch(error => console.error('Error!', error.message))
             }
